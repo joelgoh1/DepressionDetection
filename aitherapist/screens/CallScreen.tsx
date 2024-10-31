@@ -1,6 +1,5 @@
-// screens/CallScreen.tsx
-import React, { useEffect } from 'react';
-import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
+import React, { useEffect, useState } from 'react';
+import { View, Text, StyleSheet, Image, TouchableOpacity, Alert } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons'; 
 import * as Speech from 'expo-speech';
 import { StackNavigationProp } from '@react-navigation/stack';
@@ -8,46 +7,76 @@ import { RootStackParamList } from '../App';
 
 type HomeScreenNavigationProp = StackNavigationProp<RootStackParamList, 'Home'>;
 
-type Props = {
+interface Props {
   navigation: HomeScreenNavigationProp;
-};
+}
 
 const CallScreen: React.FC<Props> = ({ navigation }) => {
-  const therapistImage = require('../data/images/aitherapist.jpg');
+  const [isRecording, setIsRecording] = useState(false);
+  const [transcribedText, setTranscribedText] = useState('');
 
   useEffect(() => {
     const speech = 'Welcome to Therapist AI. The session is now starting. How was your day?';
     Speech.speak(speech, {language: 'en-US'});
   }, []);
 
+
+  const listenInBackend = async () => {
+    try {
+      
+      const serverResponse = await fetch('http://192.168.1.12:5001/listen', {
+        method: 'get'
+      });
+  
+      const data = await serverResponse.json();
+      setTranscribedText(data.response);
+      console.log(transcribedText);
+      Speech.speak(transcribedText, {language: 'en-US'})
+    } catch (error) {
+      Alert.alert('Error', 'Failed to transcribe audio');
+      console.error(error);
+    }
+  };
+
+
   const endCall = () => {
-    // Speak a message when the call is ended
     Speech.speak('Ending the call. Thank you for using Therapist AI.', {
       language: 'en-US',
     });
     navigation.navigate('Home');
-    
   };
+
   return (
     <View style={styles.container}>
-      <Image source={therapistImage} style={styles.image} />
+      <Image source={require('../data/images/aitherapist.jpg')} style={styles.image} />
       <Text style={styles.title}>Therapist.AI</Text>
-      <Text style={styles.status}>Listening...</Text>
+      <Text style={styles.status}>{isRecording ? 'Recording...' : 'Tap microphone to speak'}</Text>
+      
+      {transcribedText ? (
+        <View style={styles.transcriptionContainer}>
+          <Text style={styles.transcriptionText}>{transcribedText}</Text>
+        </View>
+      ) : null}
       
       <View style={styles.actionsContainer}>
-        <TouchableOpacity style={styles.actionButton}>
-          <FontAwesome name="microphone-slash" size={30} color="#fff" />
-          <Text style={styles.actionText}>Mute</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.actionButton}>
-          <FontAwesome name="file-text" size={30} color="#fff" />
-          <Text style={styles.actionText}>Transcribe</Text>
+        <TouchableOpacity 
+          onPress={listenInBackend}
+          style={styles.actionButton}
+        >
+          <FontAwesome 
+            name={isRecording ? "microphone-slash" : "microphone"} 
+            size={30} 
+            color="#fff" 
+          />
+          <Text style={styles.actionText}>
+            {isRecording ? 'Stop' : 'Record'}
+          </Text>
         </TouchableOpacity>
       </View>
 
       <TouchableOpacity onPress={endCall} style={styles.endCallButton}>
         <FontAwesome name="phone" size={30} color="#fff" />
-        <Text style={styles.endCallText}>End call</Text>
+        <Text style={styles.transcriptionText}>End call</Text>
       </TouchableOpacity>
     </View>
   );
@@ -100,11 +129,16 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  endCallText: {
+  transcriptionContainer: {
+    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+    padding: 15,
+    borderRadius: 10,
+    width: '80%',
+    marginBottom: 20,
+  },
+  transcriptionText: {
     color: '#fff',
-    marginLeft: 10,
     fontSize: 16,
-    fontWeight: 'bold',
   },
 });
 
