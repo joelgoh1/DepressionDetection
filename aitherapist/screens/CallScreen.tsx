@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, StyleSheet, Image, TouchableOpacity, Alert } from 'react-native';
+import { View, Text, StyleSheet, Image, TouchableOpacity, Alert, ScrollView } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons'; 
 import * as Speech from 'expo-speech';
 import { StackNavigationProp } from '@react-navigation/stack';
@@ -20,27 +20,24 @@ const CallScreen: React.FC<Props> = ({ navigation }) => {
     Speech.speak(speech, {language: 'en-US'});
   }, []);
 
-
   const listenInBackend = async () => {
     try {
-      
-      const serverResponse = await fetch('http://192.168.1.12:5001/listen', {
+      const serverResponse = await fetch('http://localhost:5001/listen', {
         method: 'get'
       });
   
       const data = await serverResponse.json();
       setTranscribedText(data.response);
-      console.log(transcribedText);
-      Speech.speak(transcribedText, {language: 'en-US'})
+      console.log(data.response)
+      await Speech.speak(data.response, {language: 'en-US'})
     } catch (error) {
       Alert.alert('Error', 'Failed to transcribe audio');
       console.error(error);
     }
   };
 
-
   const endCall = () => {
-    Speech.speak('Ending the call. Thank you for using Therapist AI.', {
+    Speech.speak('Thank you for using Therapist AI.', {
       language: 'en-US',
     });
     navigation.navigate('Home');
@@ -52,32 +49,34 @@ const CallScreen: React.FC<Props> = ({ navigation }) => {
       <Text style={styles.title}>Therapist.AI</Text>
       <Text style={styles.status}>{isRecording ? 'Recording...' : 'Tap microphone to speak'}</Text>
       
-      {transcribedText ? (
-        <View style={styles.transcriptionContainer}>
+      <ScrollView style={styles.transcriptionContainer}>
+        {transcribedText ? (
           <Text style={styles.transcriptionText}>{transcribedText}</Text>
-        </View>
-      ) : null}
+        ) : null}
+      </ScrollView>
       
-      <View style={styles.actionsContainer}>
-        <TouchableOpacity 
-          onPress={listenInBackend}
-          style={styles.actionButton}
-        >
-          <FontAwesome 
-            name={isRecording ? "microphone-slash" : "microphone"} 
-            size={30} 
-            color="#fff" 
-          />
-          <Text style={styles.actionText}>
-            {isRecording ? 'Stop' : 'Record'}
-          </Text>
-        </TouchableOpacity>
-      </View>
+      <View style={styles.bottomContainer}>
+        <View style={styles.controlsContainer}>
+          <TouchableOpacity 
+            onPress={listenInBackend}
+            style={styles.actionButton}
+          >
+            <FontAwesome 
+              name={isRecording ? "microphone-slash" : "microphone"} 
+              size={30} 
+              color="#fff" 
+            />
+            <Text style={styles.actionText}>
+              {isRecording ? 'Stop' : 'Record'}
+            </Text>
+          </TouchableOpacity>
 
-      <TouchableOpacity onPress={endCall} style={styles.endCallButton}>
-        <FontAwesome name="phone" size={30} color="#fff" />
-        <Text style={styles.transcriptionText}>End call</Text>
-      </TouchableOpacity>
+          <TouchableOpacity onPress={endCall} style={styles.endCallButton}>
+            <FontAwesome name="phone" size={30} color="#fff" />
+            <Text style={styles.transcriptionText}>End call</Text>
+          </TouchableOpacity>
+        </View>
+      </View>
     </View>
   );
 };
@@ -87,7 +86,8 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#2f4f82', 
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
+    paddingTop: 40,
   },
   image: {
     width: 150,
@@ -104,13 +104,23 @@ const styles = StyleSheet.create({
   status: {
     fontSize: 16,
     color: '#cfcfcf',
-    marginBottom: 40,
+    marginBottom: 20,
+  },
+  bottomContainer: {
+    position: 'absolute',
+    bottom: 20,
+    width: '100%',
+    alignItems: 'center',
+  },
+  controlsContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 20,
   },
   actionsContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    width: '60%',
-    marginBottom: 40,
+    alignItems: 'center',
+    marginBottom: 20,
   },
   actionButton: {
     alignItems: 'center',
@@ -134,7 +144,8 @@ const styles = StyleSheet.create({
     padding: 15,
     borderRadius: 10,
     width: '80%',
-    marginBottom: 20,
+    maxHeight: '40%',
+    marginBottom: 120,
   },
   transcriptionText: {
     color: '#fff',
