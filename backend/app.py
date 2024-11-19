@@ -8,15 +8,6 @@ import numpy as np
 from speechbrain.pretrained import EncoderClassifier
 from transformers import Wav2Vec2Processor, Wav2Vec2ForCTC
 
-# Initialize Flask app
-app = Flask(__name__)
-CORS(app)
-
-# Global variables for models
-wav2vec2_processor = None
-wav2vec2_model = None
-emotion_model = None
-
 def initialize_models():
     """Initialize all models at startup"""
     global wav2vec2_processor, wav2vec2_model, emotion_model
@@ -39,6 +30,20 @@ def initialize_models():
     except Exception as e:
         print(f"Error loading models: {str(e)}")
         return False
+    
+# Initialize Flask app
+app = Flask(__name__)
+CORS(app)
+
+# Global variables for models
+wav2vec2_processor = None
+wav2vec2_model = None
+emotion_model = None
+
+if not initialize_models():
+    raise RuntimeError("Failed to initialize models. Exiting...")
+
+
 
 def audio_data_to_tensor(audio_data):
     """Convert AudioData to tensor format required by the model"""
@@ -220,7 +225,7 @@ def listen_and_respond():
 if __name__ == '__main__':
     # Initialize models before starting the server
     if initialize_models():
-        app.run(debug=True, host='0.0.0.0', port=5001)
+        app.run(debug=False, host='0.0.0.0', port=5001)
     else:
         print("Failed to initialize models. Exiting...")
         exit(1)
