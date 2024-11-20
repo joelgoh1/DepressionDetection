@@ -1,0 +1,107 @@
+data from EDAIC usc.edu
+
+The dataset is available here:
+DAIC-WOZ Database (usc.edu)
+https://dcapswoz.ict.usc.edu/
+
+Mohammad Soleymani, PhD
+He/him/his
+Research Associate Professor
+USC Institute for Creative Technologies
+12015 Waterfront Drive
+Playa Vista, CA 90094-2536
++1 (310) 577 6215
+https://www.ihp-lab.org
+
+300_AUDIO.wav       347_AUDIO.wav       393_AUDIO.wav       441_AUDIO.wav       488_AUDIO.wav       656_AUDIO.wav
+300_Transcript.csv  347_Transcript.csv  393_Transcript.csv  441_Transcript.csv  488_Transcript.csv  656_Transcript.csv
+301_AUDIO.wav       348_AUDIO.wav       395_AUDIO.wav       442_AUDIO.wav       489_AUDIO.wav       657_AUDIO.wav
+301_Transcript.csv  348_Transcript.csv  395_Transcript.csv  442_Transcript.csv  489_Transcript.csv  657_Transcript.csv
+302_AUDIO.wav       349_AUDIO.wav       396_AUDIO.wav       443_AUDIO.wav       490_AUDIO.wav       658_AUDIO.wav
+302_Transcript.csv  349_Transcript.csv  396_Transcript.csv  443_Transcript.csv  490_Transcript.csv  658_Transcript.csv
+303_AUDIO.wav       350_AUDIO.wav       397_AUDIO.wav       444_AUDIO.wav       491_AUDIO.wav       659_AUDIO.wav
+303_Transcript.csv  350_Transcript.csv  397_Transcript.csv  444_Transcript.csv  491_Transcript.csv  659_Transcript.csv
+304_AUDIO.wav       351_AUDIO.wav       399_AUDIO.wav       445_AUDIO.wav       492_AUDIO.wav       660_AUDIO.wav
+304_Transcript.csv  351_Transcript.csv  399_Transcript.csv  445_Transcript.csv  492_Transcript.csv  660_Transcript.csv
+305_AUDIO.wav       352_AUDIO.wav       400_AUDIO.wav       446_AUDIO.wav       600_AUDIO.wav       661_AUDIO.wav
+305_Transcript.csv  352_Transcript.csv  400_Transcript.csv  446_Transcript.csv  600_Transcript.csv  661_Transcript.csv
+306_AUDIO.wav       353_AUDIO.wav       401_AUDIO.wav       447_AUDIO.wav       601_AUDIO.wav       662_AUDIO.wav
+306_Transcript.csv  353_Transcript.csv  401_Transcript.csv  447_Transcript.csv  601_Transcript.csv  662_Transcript.csv
+307_AUDIO.wav       354_AUDIO.wav       402_AUDIO.wav       448_AUDIO.wav       602_AUDIO.wav       663_AUDIO.wav
+307_Transcript.csv  354_Transcript.csv  402_Transcript.csv  448_Transcript.csv  602_Transcript.csv  663_Transcript.csv
+308_AUDIO.wav       355_AUDIO.wav       403_AUDIO.wav       449_AUDIO.wav       603_AUDIO.wav       664_AUDIO.wav
+308_Transcript.csv  355_Transcript.csv  403_Transcript.csv  449_Transcript.csv  603_Transcript.csv  664_Transcript.csv
+309_AUDIO.wav       356_AUDIO.wav       404_AUDIO.wav       450_AUDIO.wav       604_AUDIO.wav       666_AUDIO.wav
+309_Transcript.csv  356_Transcript.csv  404_Transcript.csv  450_Transcript.csv  604_Transcript.csv  666_Transcript.csv
+310_AUDIO.wav       357_AUDIO.wav       405_AUDIO.wav       451_AUDIO.wav       605_AUDIO.wav       667_AUDIO.wav
+310_Transcript.csv  357_Transcript.csv  405_Transcript.csv  451_Transcript.csv  605_Transcript.csv  667_Transcript.csv
+311_AUDIO.wav       358_AUDIO.wav       406_AUDIO.wav       452_AUDIO.wav       606_AUDIO.wav       669_AUDIO.wav
+311_Transcript.csv  358_Transcript.csv  406_Transcript.csv  452_Transcript.csv  606_Transcript.csv  669_Transcript.csv
+312_AUDIO.wav       359_AUDIO.wav       407_AUDIO.wav       453_AUDIO.wav       607_AUDIO.wav       670_AUDIO.wav
+312_Transcript.csv  359_Transcript.csv  407_Transcript.csv  453_Transcript.csv  607_Transcript.csv  670_Transcript.csv
+313_AUDIO.wav       360_AUDIO.wav       408_AUDIO.wav       454_AUDIO.wav       608_AUDIO.wav       673_AUDIO.wav
+313_Transcript.csv  360_Transcript.csv  408_Transcript.csv  454_Transcript.csv  608_Transcript.csv  673_Transcript.csv
+314_AUDIO.wav       361_AUDIO.wav       409_AUDIO.wav       455_AUDIO.wav       609_AUDIO.wav       676_AUDIO.wav
+314_Transcript.csv  361_Transcript.csv  409_Transcript.csv  455_Transcript.csv  609_Transcript.csv  676_Transcript.csv
+315_AUDIO.wav       362_AUDIO.wav       410_AUDIO.wav       456_AUDIO.wav       612_AUDIO.wav       677_AUDIO.wav
+315_Transcript.csv  362_Transcript.csv  410_Transcript.csv  456_Transcript.csv  612_Transcript.csv  677_Transcript.csv
+316_AUDIO.wav       363_AUDIO.wav       411_AUDIO.wav       457_AUDIO.wav       615_AUDIO.wav       679_AUDIO.wav
+316_Transcript.csv  363_Transcript.csv  411_Transcript.csv  457_Transcript.csv  615_Transcript.csv  679_Transcript.csv
+317_AUDIO.wav       364_AUDIO.wav       412_AUDIO.wav       458_AUDIO.wav       617_AUDIO.wav       680_AUDIO.wav
+317_Transcript.csv  364_Transcript.csv  412_Transcript.csv  458_Transcript.csv  617_Transcript.csv  680_Transcript.csv
+318_AUDIO.wav       365_AUDIO.wav       413_AUDIO.wav       459_AUDIO.wav       618_AUDIO.wav       682_AUDIO.wav
+318_Transcript.csv  365_Transcript.csv  413_Transcript.csv  459_Transcript.csv  618_Transcript.csv  682_Transcript.csv
+319_AUDIO.wav       366_AUDIO.wav       414_AUDIO.wav       461_AUDIO.wav       619_AUDIO.wav       683_AUDIO.wav
+319_Transcript.csv  366_Transcript.csv  414_Transcript.csv  461_Transcript.csv  619_Transcript.csv  683_Transcript.csv
+320_AUDIO.wav       367_AUDIO.wav       415_AUDIO.wav       462_AUDIO.wav       620_AUDIO.wav       684_AUDIO.wav
+320_Transcript.csv  367_Transcript.csv  415_Transcript.csv  462_Transcript.csv  620_Transcript.csv  684_Transcript.csv
+321_AUDIO.wav       368_AUDIO.wav       416_AUDIO.wav       463_AUDIO.wav       622_AUDIO.wav       687_AUDIO.wav
+321_Transcript.csv  368_Transcript.csv  416_Transcript.csv  463_Transcript.csv  622_Transcript.csv  687_Transcript.csv
+322_AUDIO.wav       369_AUDIO.wav       417_AUDIO.wav       464_AUDIO.wav       623_AUDIO.wav       688_AUDIO.wav
+322_Transcript.csv  369_Transcript.csv  417_Transcript.csv  464_Transcript.csv  623_Transcript.csv  688_Transcript.csv
+323_AUDIO.wav       370_AUDIO.wav       418_AUDIO.wav       465_AUDIO.wav       624_AUDIO.wav       689_AUDIO.wav
+323_Transcript.csv  370_Transcript.csv  418_Transcript.csv  465_Transcript.csv  624_Transcript.csv  689_Transcript.csv
+324_AUDIO.wav       371_AUDIO.wav       419_AUDIO.wav       466_AUDIO.wav       625_AUDIO.wav       691_AUDIO.wav
+324_Transcript.csv  371_Transcript.csv  419_Transcript.csv  466_Transcript.csv  625_Transcript.csv  691_Transcript.csv
+325_AUDIO.wav       372_AUDIO.wav       420_AUDIO.wav       467_AUDIO.wav       626_AUDIO.wav       692_AUDIO.wav
+325_Transcript.csv  372_Transcript.csv  420_Transcript.csv  467_Transcript.csv  626_Transcript.csv  692_Transcript.csv
+326_AUDIO.wav       373_AUDIO.wav       421_AUDIO.wav       468_AUDIO.wav       627_AUDIO.wav       693_AUDIO.wav
+326_Transcript.csv  373_Transcript.csv  421_Transcript.csv  468_Transcript.csv  627_Transcript.csv  693_Transcript.csv
+327_AUDIO.wav       374_AUDIO.wav       422_AUDIO.wav       469_AUDIO.wav       628_AUDIO.wav       695_AUDIO.wav
+327_Transcript.csv  374_Transcript.csv  422_Transcript.csv  469_Transcript.csv  628_Transcript.csv  695_Transcript.csv
+328_AUDIO.wav       375_AUDIO.wav       423_AUDIO.wav       470_AUDIO.wav       629_AUDIO.wav       696_AUDIO.wav
+328_Transcript.csv  375_Transcript.csv  423_Transcript.csv  470_Transcript.csv  629_Transcript.csv  696_Transcript.csv
+329_AUDIO.wav       376_AUDIO.wav       424_AUDIO.wav       471_AUDIO.wav       631_AUDIO.wav       697_AUDIO.wav
+329_Transcript.csv  376_Transcript.csv  424_Transcript.csv  471_Transcript.csv  631_Transcript.csv  697_Transcript.csv
+330_AUDIO.wav       377_AUDIO.wav       425_AUDIO.wav       472_AUDIO.wav       632_AUDIO.wav       698_AUDIO.wav
+330_Transcript.csv  377_Transcript.csv  425_Transcript.csv  472_Transcript.csv  632_Transcript.csv  698_Transcript.csv
+331_AUDIO.wav       378_AUDIO.wav       426_AUDIO.wav       473_AUDIO.wav       633_AUDIO.wav       699_AUDIO.wav
+331_Transcript.csv  378_Transcript.csv  426_Transcript.csv  473_Transcript.csv  633_Transcript.csv  699_Transcript.csv
+332_AUDIO.wav       379_AUDIO.wav       427_AUDIO.wav       474_AUDIO.wav       634_AUDIO.wav       702_AUDIO.wav
+332_Transcript.csv  379_Transcript.csv  427_Transcript.csv  474_Transcript.csv  634_Transcript.csv  702_Transcript.csv
+333_AUDIO.wav       380_AUDIO.wav       428_AUDIO.wav       475_AUDIO.wav       635_AUDIO.wav       703_AUDIO.wav
+333_Transcript.csv  380_Transcript.csv  428_Transcript.csv  475_Transcript.csv  635_Transcript.csv  703_Transcript.csv
+334_AUDIO.wav       381_AUDIO.wav       429_AUDIO.wav       476_AUDIO.wav       636_AUDIO.wav       705_AUDIO.wav
+334_Transcript.csv  381_Transcript.csv  429_Transcript.csv  476_Transcript.csv  636_Transcript.csv  705_Transcript.csv
+335_AUDIO.wav       382_AUDIO.wav       430_AUDIO.wav       477_AUDIO.wav       637_AUDIO.wav       707_AUDIO.wav
+335_Transcript.csv  382_Transcript.csv  430_Transcript.csv  477_Transcript.csv  637_Transcript.csv  707_Transcript.csv
+336_AUDIO.wav       383_AUDIO.wav       431_AUDIO.wav       478_AUDIO.wav       638_AUDIO.wav       708_AUDIO.wav
+336_Transcript.csv  383_Transcript.csv  431_Transcript.csv  478_Transcript.csv  638_Transcript.csv  708_Transcript.csv
+337_AUDIO.wav       384_AUDIO.wav       432_AUDIO.wav       479_AUDIO.wav       640_AUDIO.wav       709_AUDIO.wav
+337_Transcript.csv  384_Transcript.csv  432_Transcript.csv  479_Transcript.csv  640_Transcript.csv  709_Transcript.csv
+338_AUDIO.wav       385_AUDIO.wav       433_AUDIO.wav       480_AUDIO.wav       641_AUDIO.wav       710_AUDIO.wav
+338_Transcript.csv  385_Transcript.csv  433_Transcript.csv  480_Transcript.csv  641_Transcript.csv  710_Transcript.csv
+339_AUDIO.wav       386_AUDIO.wav       434_AUDIO.wav       481_AUDIO.wav       649_AUDIO.wav       712_AUDIO.wav
+339_Transcript.csv  386_Transcript.csv  434_Transcript.csv  481_Transcript.csv  649_Transcript.csv  712_Transcript.csv
+340_AUDIO.wav       387_AUDIO.wav       435_AUDIO.wav       482_AUDIO.wav       650_AUDIO.wav       713_AUDIO.wav
+340_Transcript.csv  387_Transcript.csv  435_Transcript.csv  482_Transcript.csv  650_Transcript.csv  713_Transcript.csv
+341_AUDIO.wav       388_AUDIO.wav       436_AUDIO.wav       483_AUDIO.wav       651_AUDIO.wav       715_AUDIO.wav
+341_Transcript.csv  388_Transcript.csv  436_Transcript.csv  483_Transcript.csv  651_Transcript.csv  715_Transcript.csv
+343_AUDIO.wav       389_AUDIO.wav       437_AUDIO.wav       484_AUDIO.wav       652_AUDIO.wav       716_AUDIO.wav
+343_Transcript.csv  389_Transcript.csv  437_Transcript.csv  484_Transcript.csv  652_Transcript.csv  716_Transcript.csv
+344_AUDIO.wav       390_AUDIO.wav       438_AUDIO.wav       485_AUDIO.wav       653_AUDIO.wav       717_AUDIO.wav
+344_Transcript.csv  390_Transcript.csv  438_Transcript.csv  485_Transcript.csv  653_Transcript.csv  717_Transcript.csv
+345_AUDIO.wav       391_AUDIO.wav       439_AUDIO.wav       486_AUDIO.wav       654_AUDIO.wav       718_AUDIO.wav
+345_Transcript.csv  391_Transcript.csv  439_Transcript.csv  486_Transcript.csv  654_Transcript.csv  718_Transcript.csv
+346_AUDIO.wav       392_AUDIO.wav       440_AUDIO.wav       487_AUDIO.wav       655_AUDIO.wav
+346_Transcript.csv  392_Transcript.csv  440_Transcript.csv  487_Transcript.csv  655_Transcript.csv
