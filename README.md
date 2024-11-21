@@ -1,16 +1,16 @@
 # CS5647 Term Project Final Report: Depression Detection in Voice Clips based on Prosodic and Emotion Features
 
 ## Abstract
-This study aims to enhance depression detection by integrating prosody-aware features with zero-shot emotion detection from pretrained transformer models. The proposed framework leverages SpeechBrain for automatic speech recognition (ASR) and emotion detection, utilizing a model trained on diverse, emotion-rich datasets to ensure robust performance. Key prosodic features are extracted using Praat software and fused with emotion scores from SpeechBrain to create a multimodal input for depression classification.
+This study aims to enhance depression detection by integrating prosody-aware features with zero-shot emotion detection from pretrained transformer models. The proposed framework leverages SpeechBrain for automatic speech recognition and emotion detection, utilizing a model trained on diverse, emotion-rich datasets to ensure robust performance. Key prosodic features are extracted using Praat software and fused with emotion scores from SpeechBrain to create a multimodal input for depression classification.
 
-Two approaches were explored for the classification task: a tree-based model and an LSTM with attention mechanism. The tree-based model achieved Regression of PHQ scores in terms of RMSE at 0.0197, while the LSTM+Attention model achieved an RMSE of 0.XXX, indicating improved prediction accuracy with the latter. 
+A simple tree-based model was explored for the classification task, and our best result on the development set achieved an RMSE of 6.173, compared to the 6.32 RMSE of the baseline of the AVEC'19 DDS track. 
 
 A mock-up depression detection demo is also presented to highlight the potential of combining linguistic, emotional, and prosodic cues in developing emotion-aware mental health tools, which is the core interest of our project team.
 
 ## Instructions to run
 
 ### Model visualisation
-
+1. View the code located at visualisation/code
 
 ### App demonstration
 Note: Testing for this project was only conducted on macOS. Compatibility with other operating systems has not been verified. App currently only supports ios.
