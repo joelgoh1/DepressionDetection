@@ -8,6 +8,7 @@ Pitch (F0)
 Intensity (Energy)
 Voice Quality Metrics (Jitter, Shimmer, HNR)
 Duration
+
 02: Jupyter Notebook for Emotion Score Extraction
 This Python notebook is designed to extract emotion scores [Neutral, Happy, Sad, Angry] from WAV files using a pretrained SpeechBrain model. The extraction process relies on the time boundaries of voice transcriptions for each phrase. Phrases are analyzed at the phrase level, with emotion scores averaged for each chunk. This approach contrasts with the frame-level method, where raw scores are used directly without averaging.
 
